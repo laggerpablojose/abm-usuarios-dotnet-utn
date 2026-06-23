@@ -103,17 +103,18 @@ namespace TPBocchieriGramajoLezcanoLagger
                 }
             }
 
-            return "código: " + codigo
-                + "\nNombre: " + nombre
-                + "\nDNI: " + dni
-                + "\nPassWord: " + password
-                + "\nEmail: " + email
-                + "\nGrupo:"
-                + "\n----------------------------------------"
-                + "\n" + grupo.ToString()
-                + "\n----------------------------------------"
-                + "\nLista de permisos propios:"
-                + permisosPropios;
+            return "Código: " + codigo
+            + "\nNombre: " + nombre
+            + "\nApellido: " + apellido
+            + "\nDNI: " + dni
+            + "\nPassword: " + password
+            + "\nEmail: " + email
+            + "\nGrupo:"
+            + "\n----------------------------------------"
+            + "\n" + grupo.ToString()
+            + "\n----------------------------------------"
+            + "\nLista de permisos propios:"
+            + permisosPropios;
         }
     }
 }

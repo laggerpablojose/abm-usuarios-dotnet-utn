@@ -1,186 +1,109 @@
-\# ABM de Usuarios .NET
+# ABM de Usuarios .NET
 
+Aplicación de consola desarrollada en C# como trabajo práctico académico de la materia Programación .NET de la Tecnicatura Universitaria en Tecnologías de la Información de la UTN FRSF.
 
+## Objetivo académico
 
-Aplicación de consola desarrollada en C# como trabajo práctico de la materia Programación .NET de la Tecnicatura Universitaria en Tecnologías de la Información de la UTN FRSF.
+El objetivo del proyecto es aplicar conceptos de programación orientada a objetos mediante la construcción de un sistema de administración de permisos, grupos y usuarios.
 
+El sistema permite representar relaciones entre objetos, utilizar colecciones no genéricas y organizar operaciones de alta, baja, modificación y consulta desde una aplicación de consola.
 
+## Funcionalidades implementadas
 
-\## Objetivo académico
+- Menú principal de navegación.
+- ABM completo de permisos.
+- ABM completo de grupos.
+- ABM completo de usuarios.
+- Alta de nuevos permisos, grupos y usuarios.
+- Listado de permisos, grupos y usuarios.
+- Modificación de datos existentes.
+- Eliminación de registros.
+- Validación de códigos repetidos.
+- Validación para evitar eliminar objetos relacionados.
+- Asignación de permisos a grupos.
+- Asociación de usuarios a grupos.
+- Asignación de permisos propios a usuarios.
+- Carga inicial de datos para prueba.
+- Pruebas manuales de funcionamiento.
 
+## Modelo de clases
 
+El proyecto utiliza las siguientes clases principales:
 
-El proyecto tiene como objetivo aplicar los conceptos fundamentales de programación orientada a objetos desarrollados en la materia, mediante la construcción de un sistema de administración de permisos, grupos y usuarios.
+### Permiso
 
+Representa una autorización o acción disponible dentro del sistema.
 
+### Grupo
 
-\## Funcionalidades
+Representa un conjunto de permisos. Un grupo puede tener varios permisos asociados.
 
+### Usuario
 
+Representa un usuario del sistema. Cada usuario se asocia a un grupo y puede tener permisos propios adicionales.
 
-\### Implementadas
+### Program
 
+Contiene el punto de entrada de la aplicación, las listas generales, el menú principal y las operaciones ABM.
 
+## Relaciones principales
 
-\* Modelo de la clase `Permiso`.
+- Un grupo contiene permisos.
+- Un usuario pertenece a un grupo.
+- Un usuario puede tener permisos propios.
+- Las entidades se administran mediante listas generales estáticas.
 
-\* Modelo de la clase `Grupo`.
+## Tecnologías utilizadas
 
-\* Modelo de la clase `Usuario`.
+- C#
+- .NET
+- Visual Studio
+- Aplicación de consola
+- Git
+- GitHub
+- `System.Collections`
+- `ArrayList`
 
-\* Uso de atributos privados y propiedades públicas.
+## Conceptos aplicados
 
-\* Constructores con parámetros.
+- Clases y objetos.
+- Atributos privados.
+- Propiedades públicas.
+- Constructores completos.
+- Sobrescritura del método `ToString`.
+- Encapsulamiento.
+- Relaciones entre clases.
+- Asociación entre objetos.
+- Colecciones no genéricas.
+- Uso de `ArrayList`.
+- Estructuras condicionales.
+- Estructuras repetitivas.
+- Métodos.
+- Modularización.
+- Validaciones básicas.
+- Control de versiones con Git.
 
-\* Sobrescritura del método `ToString`.
+## Estado del proyecto
 
-\* Relaciones entre objetos.
+Finalizado para entrega académica.
 
-\* Uso de `System.Collections`.
+El sistema cuenta con ABM completo de permisos, grupos y usuarios, incluyendo validaciones de códigos repetidos y controles para evitar la eliminación de objetos relacionados.
 
-\* Uso de colecciones `ArrayList`.
+## Ejecución
 
-\* Inicialización del programa desde la clase `Program`.
+1. Clonar o descargar el repositorio.
+2. Abrir el archivo `.sln` con Visual Studio.
+3. Compilar la solución.
+4. Ejecutar el proyecto de consola.
+5. Utilizar el menú principal para acceder a las operaciones disponibles.
 
+## Integrantes
 
+- Lagger, Pablo José.
+- Lezcano, Claudio
+- Bocchieri, Matías.
+- Gramajo, María Paula.
 
-\### Pendientes
+## Aclaración
 
-
-
-\* Alta, baja, modificación y consulta de permisos.
-
-\* Alta, baja, modificación y consulta de grupos.
-
-\* Alta, baja, modificación y consulta de usuarios.
-
-\* Asignación de permisos a grupos.
-
-\* Asignación de permisos particulares a usuarios.
-
-\* Menú principal de la aplicación.
-
-\* Validaciones de datos.
-
-\* Pruebas finales y preparación de la entrega.
-
-
-
-\## Modelo de clases
-
-
-
-El sistema está compuesto principalmente por las siguientes clases:
-
-
-
-\* `Permiso`: representa una acción que puede ser asignada a un grupo o usuario.
-
-\* `Grupo`: agrupa permisos que pueden ser compartidos por varios usuarios.
-
-\* `Usuario`: representa a una persona registrada en el sistema, asociada a un grupo y a permisos particulares.
-
-\* `Program`: contiene el punto de entrada y la ejecución general de la aplicación.
-
-
-
-\## Tecnologías utilizadas
-
-
-
-\* C#
-
-\* .NET
-
-\* Aplicación de consola
-
-\* Visual Studio
-
-\* Git
-
-\* GitHub
-
-\* `System.Collections`
-
-\* `ArrayList`
-
-
-
-\## Conceptos aplicados
-
-
-
-\* Clases y objetos.
-
-\* Encapsulamiento.
-
-\* Atributos privados.
-
-\* Propiedades públicas.
-
-\* Constructores.
-
-\* Sobrescritura de métodos.
-
-\* Método `ToString`.
-
-\* Colecciones no genéricas.
-
-\* Relaciones entre clases.
-
-\* Asociación entre objetos.
-
-\* Modularización del código.
-
-\* Control de versiones con Git.
-
-
-
-\## Estado del proyecto
-
-
-
-En desarrollo.
-
-
-
-Actualmente se encuentra implementado el modelo inicial de clases. Las funcionalidades ABM serán incorporadas durante las siguientes etapas del trabajo práctico.
-
-
-
-\## Ejecución
-
-
-
-1\. Clonar el repositorio.
-
-2\. Abrir el archivo de solución `.sln` con Visual Studio.
-
-3\. Compilar la solución.
-
-4\. Ejecutar el proyecto de consola.
-
-
-
-\## Integrantes
-
-
-
-\* Pablo Lagger.
-
-\* Matías Bocchieri.
-
-\* María Paula Gramajo.
-
-\* Claudio Lezcano.
-
-
-
-\## Aclaración
-
-
-
-Este repositorio corresponde a un proyecto académico desarrollado para la materia Programación .NET de la UTN FRSF.
-
-
-
+Este repositorio corresponde a un proyecto académico desarrollado para la materia Programación .NET de la UTN FRSF. No representa un sistema productivo, sino una práctica orientada a aplicar los contenidos trabajados en la cátedra.
